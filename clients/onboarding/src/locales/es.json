@@ -125,7 +125,7 @@
   "companyType.other": "Otro",
   "companyType.selfEmployed": "Autónomo",
   "companyType.selfEmployed.FRA": "Autónomo, emprendedor individual o profesión liberal",
-  "emailPage.firstLink": "Términos y condiciones de Swan",
+  "emailPage.firstLink": "Términos y condiciones",
   "emailPage.secondLink": "Condiciones de colaboración de {partner}",
   "emailPage.terms": "Al hacer clic en \"siguiente\", estás aceptando {firstLink} y {secondLink}",
   "employmentStatus.craftsman": "Artesano",

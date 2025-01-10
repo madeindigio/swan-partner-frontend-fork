@@ -8,8 +8,8 @@
 ## Clone
 
 ```console
-$ git clone git@github.com:swan-io/swan-partner-frontend.git
-$ cd swan-partner-frontend
+$ git clone git@github.com:madeindigio/swan-partner-frontend-fork.git
+$ cd swan-partner-frontend-fork
 ```
 
 ## Install

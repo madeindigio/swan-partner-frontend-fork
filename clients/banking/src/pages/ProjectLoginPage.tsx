@@ -220,12 +220,6 @@ export const ProjectLoginPage = ({
               )}
 
               <Fill minHeight={48} />
-
-              {isNotNullish(logoUri) && (
-                <LakeText variant="smallRegular" style={styles.partnership}>
-                  {t("login.partnership")} <SwanLogo style={styles.swanPartnershipLogo} />
-                </LakeText>
-              )}
             </ScrollView>
           )}
         </ResponsiveContainer>

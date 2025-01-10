@@ -444,7 +444,7 @@ export const AccountClose = ({ accountId, resourceId, status }: Props) => {
                               subtitle={t("accountClose.negativeBalance.description")}
                             >
                               <LakeButtonGroup>
-                                <LakeButton href="mailto:support@swan.io" mode="secondary">
+                                <LakeButton href="mailto:support@digio.es" mode="secondary">
                                   {t("accountClose.negativeBalance.contactSupport")}
                                 </LakeButton>
                               </LakeButtonGroup>
@@ -529,7 +529,7 @@ export const AccountClose = ({ accountId, resourceId, status }: Props) => {
                               title={t("accountClose.suspended.title")}
                             >
                               <LakeButtonGroup>
-                                <LakeButton href="mailto:support@swan.io" mode="secondary">
+                                <LakeButton href="mailto:support@digio.es" mode="secondary">
                                   {t("accountClose.negativeBalance.contactSupport")}
                                 </LakeButton>
                               </LakeButtonGroup>

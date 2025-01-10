@@ -640,7 +640,7 @@ export const AccountArea = ({
                                         title={t("account.statusAlert.suspended")}
                                         callToAction={
                                           <LakeButton
-                                            href="mailto:support@swan.io"
+                                            href="mailto:support@digio.es"
                                             mode="tertiary"
                                             color="warning"
                                             size="small"
@@ -687,7 +687,7 @@ export const AccountArea = ({
                                         title={t("account.statusAlert.closingWithNegativeBalance")}
                                         callToAction={
                                           <LakeButton
-                                            href="mailto:support@swan.io"
+                                            href="mailto:support@digio.es"
                                             mode="tertiary"
                                             color="negative"
                                             size="small"

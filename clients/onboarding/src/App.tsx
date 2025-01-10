@@ -46,7 +46,8 @@ const PageMetadata = ({
     updateTgglContext({ accountCountry });
   }, [accountCountry]);
 
-  useTitle((projectName ?? "Swan") + " onboarding");
+  //useTitle((project?.name ?? "Swan") + " onboarding");
+  useTitle("Neom onboarding");
   useSessionTracking(projectId);
 
   return null;
