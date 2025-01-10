@@ -24,3 +24,5 @@ tests/graphql/*.ts
 localazy.keys.*.json
 
 .linked
+
+.idea
