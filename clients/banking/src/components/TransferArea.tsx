@@ -23,6 +23,7 @@ import { Router, paymentRoutes } from "../utils/routes";
 import { BeneficiaryTypePicker } from "./BeneficiaryTypePicker";
 import { Redirect } from "./Redirect";
 import { TransferTypePicker } from "./TransferTypePicker";
+import PendingDemands from "./PendingDemands";
 
 const styles = StyleSheet.create({
   container: {
@@ -99,6 +100,7 @@ export const TransferArea = ({
             { name: "AccountPaymentsRecurringTransferDetailsArea" },
             { name: "AccountPaymentsBeneficiariesList" },
             { name: "AccountPaymentsBeneficiariesDetails" },
+            { name: "AccountPaymentsPendingDemandsList" },
             () => (
               <ResponsiveContainer breakpoint={breakpoints.large} style={commonStyles.fill}>
                 {({ small, large }) => (
@@ -161,6 +163,10 @@ export const TransferArea = ({
                               },
                             ]
                           : []),
+                        {
+                          label: t("transfer.tabs.pendingDemands"),
+                          url: Router.AccountPaymentsPendingDemandsList({ accountMembershipId }),
+                        },
                       ]}
                     />
 
@@ -202,6 +208,12 @@ export const TransferArea = ({
                             <NotFoundPage />
                           ),
                       )
+                      .with({ name: "AccountPaymentsPendingDemandsList" }, () => (
+                        <PendingDemands
+                          accountId={accountId}
+                          accountMembershipId={accountMembershipId}
+                        />
+                      ))
                       .otherwise(() => (
                         <ErrorView />
                       ))}

@@ -58,6 +58,8 @@ const routes = {
 
         BeneficiariesNew: "/beneficiaries/new?:type{sepa|international}",
 
+        PendingDemandsList: "/pending-demands",
+
         // share filters
         ...createGroup("Beneficiaries", "/beneficiaries?:canceled{true}&:currency&:label&:type[]", {
           List: "/",
@@ -153,6 +155,7 @@ export const paymentRoutes = [
   "AccountPaymentsBeneficiariesList",
   "AccountPaymentsBeneficiariesDetails",
   "AccountPaymentsBeneficiariesNew",
+  "AccountPaymentsPendingDemandsList",
 ] as const satisfies RouteName[];
 
 export const accountTransactionsRoutes = [
